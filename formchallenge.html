@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formchallenge</title>
+    <link rel="stylesheet" href="formchallenge.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <section>
+          <fieldset>
+            <h1 id="heading">WHO I AM!!!</h1>
+          </fieldset>
+        </section>
+        <section>
+          <div class="ab">
+            <p>
+              *Name:
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Aryan"
+                required
+              />
+            </p>
+          </div>
+          <p>
+            *contact number:
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="123456789"
+              required
+            />
+          </p>
+
+          <p>
+            *Email ID:
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="abc@gmail.com"
+              required
+            />
+          </p>
+          <fieldset>
+            <legend>Gender:</legend>
+            <p>
+              Male<input type="radio" name="gender" id="M" /> Female<input
+                type="radio"
+                name="gender"
+                id="F"
+              />
+            </p>
+          </fieldset>
+          <p>
+            Address:
+            <textarea
+              name="address"
+              id="address"
+              cols="60"
+              rows="10"
+              placeholder="Type your address here"
+            ></textarea>
+          </p>
+        </section>
+        <section>
+          <p>
+            City:
+            <select name="city" id="city">
+              <option value="">--select--</option>
+              <option value="Sawantwadi">Sawantwadi</option>
+              <option value="Pune">Pune</option>
+            </select>
+          </p>
+        </section>
+        <section>
+          <input type="submit" value="submit" /><input
+            type="reset"
+            value="reset"
+          />
+        </section>
+      </form>
+    </div>
+  </body>
+</html>

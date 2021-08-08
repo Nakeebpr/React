@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: content-box;
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      margin: 0px;
+      padding: 0px;
+      /* background: url("https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_960_720.jpg"); */
+      /* background-repeat: no-repeat; */
+      background-size: 100%;
+    }
+    .box {
+      /* border: white 2px solid; */
+      color: white;
+      /* box-shadow: 8px 8px 25px black; */
+      display: flex;
+    }
+    #box1 {
+      display: inline-block;
+      width: 100px;
+      position: absolute;
+      left: 10px;
+      top: 12px;
+      border: white 2px solid;
+    }
+    #box1 img {
+      width: 100px;
+    }
+    #box1 div {
+      color: white;
+      width: 100px;
+      text-align: center;
+    }
+    #box2 {
+      width: 530px;
+      height: 40px;
+      margin: 12px 200px;
+      border-radius: 10px;
+      transition: all 1s ease-in;
+      align-items: center;
+      justify-content: center;
+      border: white 2px solid;
+    }
+    /* #box2:hover{
+      transi
+    } */
+    #box3 {
+      display: flex;
+      width: 50px;
+      border: white 2px solid;
+      position: absolute;
+      right: 24px;
+      width: 84px;
+      top: 7px;
+      transition: all 1s ease 3s;
+    }
+    .navbar {
+      display: flex;
+      transition: all 1s ease-in;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .navbar #home:hover {
+      transform: scale(2);
+      transform: rotate(360deg);
+    }
+    .navbar #aboutus:hover {
+      transform: scale(2);
+      transform: rotate(360deg);
+    }
+    .navbar #gallery:hover {
+      transform: scale(2);
+      transform: rotate(360deg);
+    }
+    .navbar #more:hover {
+      transform: scale(2);
+      transform: rotate(360deg);
+    }
+    .navbar li {
+      display: inline-block;
+      border-radius: 10px;
+      transition: all 1s ease-in;
+      padding: 0px 0px;
+      margin: 0px 32px;
+    }
+    .navbar li:hover {
+      transform: scale(2);
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 0px 0px;
+      margin: 0px 0px;
+      transition: all 1s ease-in;
+      /* border-radius: 10px; */
+    }
+    .navbar li a:hover {
+      /* background-color: rgba(146, 136, 136, 0.788); */
+      box-shadow: 2px 2px 15px red;
+      color: white;
+      text-decoration: none;
+      padding: 0px 21px;
+      margin: 0px 17px;
+      border-radius: 10px;
+      transform: scale(2);
+    }
+    .btn {
+      background-color: rgb(230 200 200 / 0%);
+      padding: 0px 5px;
+      /* border-radius: 10px; */
+      color: white;
+      width: 74px;
+      margin: 0px 0px;
+      border: none;
+      transition: all 1s ease-in;
+    }
+    .btn:hover {
+      color: white;
+      /* background-color: gray; */
+      box-shadow: 1px 1px 15px blue;
+      text-shadow: 3px 3px 2px gray;
+      transform: scale(2);
+    }
+    header::after {
+      background: url("https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_960_720.jpg");
+      background-size: 100%;
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0px;
+      display: flex;
+      opacity: 0.7;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+    }
+    h1 {
+      color: green;
+      justify-content: center;
+      align-items: center;
+    }
+    @media all and (max-width: 600px) {
+      #box2 {
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+      }
+    }
+  </style>
+  <body>
+    <header class="header" id="menu">
+      <div class="box" id="box1">
+        <img src="a.JPG" alt="" />
+        <div id="logoname">Apni Kaksha</div>
+      </div>
+      <div class="box" id="box2">
+        <ul class="navbar">
+          <li id="home"><a href="#">Home</a></li>
+          <li id="aboutus"><a href="#">About Us</a></li>
+          <li id="gallery"><a href="#">Gallery</a></li>
+          <li id="more"><a href="#">More</a></li>
+          <!-- <h1>hii</h1> -->
+        </ul>
+      </div>
+      <div class="box" id="box3">
+        <button class="btn">Contact us</button>
+      </div>
+    </header>
+  </body>
+</html>
